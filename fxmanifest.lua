@@ -6,4 +6,4 @@ lua54 "yes"
 author "Brodino"
 description "A mini FiveM framework"
 
-client_scripts { "client/*", }
+client_scripts { "client/**/*", "client/*", }
