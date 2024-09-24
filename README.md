@@ -1,2 +1,3 @@
-# br_framework
-A mini FiveM framewoks that contains all the utilities I had to create for my personal stuff
+# br_utils
+A utility package containing stuff that I created for my personal project
+### With support for esx, qb-core and ox_core
