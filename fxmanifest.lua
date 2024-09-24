@@ -4,7 +4,7 @@ game "gta5"
 lua54 "yes"
 
 author "Brodino"
-description "A mini FiveM framework"
+description "A bunch of utilities"
 
 shared_scripts {
     "shared/framework.lua",
