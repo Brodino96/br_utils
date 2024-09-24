@@ -6,5 +6,14 @@ lua54 "yes"
 author "Brodino"
 description "A mini FiveM framework"
 
-shared_scripts { "config.lua", "shared/*", }
-client_scripts { "client/**/*", "client/*", }
+shared_scripts {
+    "shared/framework.lua",
+    "config.lua",
+}
+
+client_scripts {
+    "client/main.lua",
+    "client/modules/playerLoaded.lua",
+    "client/modules/onPedChange.lua",
+    "client/modules/criticalHits.lua",
+}
