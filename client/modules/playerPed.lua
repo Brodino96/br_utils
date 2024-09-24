@@ -7,7 +7,7 @@ CreateThread(function ()
         if currentPed == playerPed then
             goto skip
         end
-        TriggerEvent("br_framework:onPedChange")
+        TriggerEvent("br_utils:onPedChange")
         playerPed = currentPed
         ::skip::
     end
