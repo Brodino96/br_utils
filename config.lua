@@ -1,7 +1,7 @@
 Config = {
     player = {
-        disableHeadshot = true, -- Stops the ped from taking more damage when headshotted
-        disableHatDrop = true, -- Stops the ped from losing his hat when he gets damaged
-        disableAutomaticHelmet = true, -- Stops the ped from automatically wearing an helmet while on a motorbikes
+        disableHeadshot = true, -- Stops the playerPed from reciving critical damage on an headshot (it will apply the same damage as a bodyshot)
+        disableHatDrop = true, -- Stops the playerPed from losing his hat when he gets damaged by melee
+        disableAutomaticHelmet = true, -- Stops the playerPed from automatically wearing an helmet while on bikes or bicycles
     }
 }
