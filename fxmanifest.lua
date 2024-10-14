@@ -4,7 +4,8 @@ game "gta5"
 lua54 "yes"
 
 author "Brodino"
-description "A bunch of utilities"
+description "A utility package for FiveM"
+version "1.0"
 
 shared_scripts {
     "config.lua",
