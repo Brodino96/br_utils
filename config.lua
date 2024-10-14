@@ -8,7 +8,7 @@ Config = {
         disableAutomaticHelmet = true, -- Stops the playerPed from automatically wearing an helmet while on bikes or bicycles
     },
 
-    weaponDamage = {
+    weaponDamage = { -- If active the script will override the current weapon damage with the ones in the values array
         active = true,
         values = {
             -- Pistols
