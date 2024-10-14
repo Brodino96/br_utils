@@ -1,7 +1,7 @@
 local function versionCheck(repo)
     local resourceName = GetInvokingResource() or GetCurrentResourceName()
 
-    if resourceName == "br_utils" then
+    if resourceName ~= "br_utils" then
         return Debug.error("The resource name has ben changed, unable to perform a version check", true)
     end
 
@@ -23,7 +23,7 @@ local function versionCheck(repo)
                 return Debug.success("br_utils is up to date", true)
             end
 
-            Debug.info("An update is available for br_utils (current version: "..currentVersion..")", true)
+            Debug.info("^3An update is available for br_utils (current version: "..currentVersion..")^0", true)
             Debug.info(response.html_url, true)
 		end, "GET")
 	end)
