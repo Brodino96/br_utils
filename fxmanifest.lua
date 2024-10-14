@@ -13,10 +13,13 @@ shared_scripts {
     "shared/framework.lua",
 }
 
+server_scripts {
+    "server/versionCheck.lua",
+}
+
 client_scripts {
     "client/main.lua",
     "client/modules/playerLoaded.lua",
     "client/modules/onPedChange.lua",
     "client/modules/playerAttributes.lua",
-    "client/modules/weaponDamage.lua"
 }
