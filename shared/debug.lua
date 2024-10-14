@@ -1,16 +1,16 @@
 Debug = {
-    success = function (str)
-        if Config.debugMode then
+    success = function (str, bypass)
+        if Config.debugMode or bypass then
             print("[^2SUCCESS^0] "..str)
         end
     end,
-    info = function (str)
-        if Config.debugMode then
+    info = function (str, bypass)
+        if Config.debugMode or bypass then
             print("[^3INFO^0] "..str)
         end
     end,
-    error = function (str)
-        if Config.debugMode then
+    error = function (str, bypass)
+        if Config.debugMode or bypass then
             print("[^1ERROR^0] "..str)
         end
     end
