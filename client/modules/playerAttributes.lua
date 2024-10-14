@@ -20,3 +20,5 @@ AddEventHandler("br_utils:onPedChange", setAttributes)
 
 RegisterNetEvent("br_utils:playerLoaded")
 AddEventHandler("br_utils:playerLoaded", setAttributes)
+
+setAttributes()
