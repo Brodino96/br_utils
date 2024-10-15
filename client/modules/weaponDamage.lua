@@ -97,10 +97,11 @@ local function setWeaponDamage()
 
     for weaponHash, targetDamage in pairs(Config.weaponDamage.values) do
 
-        if not IsWeaponValid(GetHashKey(weaponHash)) or type(weaponHash) ~= "string" then
-            Debug.error("Weapon wasn't valid")
+        if not IsWeaponValid(GetHashKey(weaponHash)) then
+            Debug.error(tostring(weaponHash).." is not a valid weapon")
             goto skip
         end
+        Debug.info(weaponHash.." is a valid weapon")
 
         if GetWeaponDamageType(weaponHash) ~= 3 then
             Debug.error("This is not a weapon shoots bullets")
