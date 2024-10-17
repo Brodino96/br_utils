@@ -20,6 +20,7 @@ server_scripts {
 client_scripts {
     "client/main.lua",
     "client/modules/playerLoaded.lua",
+    "client/modules/onVehicleChange.lua",
     "client/modules/onPedChange.lua",
     "client/modules/playerAttributes.lua",
 }
