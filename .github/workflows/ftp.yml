@@ -21,6 +21,6 @@ jobs:
           remote-protocol: "sftp"
           remote-host: ${{ secrets.FTP_IP }}
           remote-port: ${{ secrets.FTP_PORT }}
-          remote-user: ${{ secrets.FTP_PASSWORD }}
+          remote-user: ${{ secrets.FTP_USER }}
           remote-password: ${{ secrets.FTP_PASSWORD }}
           remote-path: "/brodino/data/odyssey/txData/server/resources/[scripts]/br_utils/"
