@@ -9,18 +9,18 @@ version "1.0.1"
 
 shared_scripts {
     "config.lua",
-    "shared/debug.lua",
-    "shared/framework.lua",
+    "shared/debug.lua", -- Debug print function
+    "shared/framework.lua", -- Checks the framework on startup
 }
 
 server_scripts {
-    "server/versionCheck.lua",
+    "server/versionCheck.lua", -- Checks the current version of the script to see if it's the latest
 }
 
 client_scripts {
-    "client/main.lua",
-    "client/modules/playerLoaded.lua",
-    "client/modules/onVehicleChange.lua",
-    "client/modules/onPedChange.lua",
-    "client/modules/playerAttributes.lua",
+    "client/main.lua", -- There is literally nothing inside this, I don't even know why i crated it
+    "client/modules/playerLoaded.lua", -- Triggers and event when the player is loaded
+    "client/modules/onPedChange.lua", -- Triggers an event when the player changes ped
+    "client/modules/onVehicleChange.lua", -- Triggers an event when the player changes vehicle
+    "client/modules/playerAttributes.lua", -- Changes attributes of the player
 }
