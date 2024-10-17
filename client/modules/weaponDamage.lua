@@ -25,9 +25,9 @@ local function setWeaponDamage()
             goto skip
         end
 
-        local currentModifier = GetWeaponDamageModifier(weaponHash)
+        SetWeaponDamageModifier(weaponHash, 1.0) -- Resets the modifier (easier calculations)
+
         local currentDamage = GetWeaponDamage(weaponHash, 0)
-        local newModifier = (currentModifier * targetDamage) / currentDamage
 
         --[[
         print(weaponHash..":")
@@ -36,7 +36,7 @@ local function setWeaponDamage()
         print(" - New modifier: "..newModifier)
         ]]
 
-        SetWeaponDamageModifier(weaponHash, newModifier)
+        SetWeaponDamageModifier(weaponHash, (targetDamage / currentDamage))
 
         --print(" - New damage: "..GetWeaponDamage(weaponHash, 0))
         ::skip::
