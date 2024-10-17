@@ -23,4 +23,5 @@ client_scripts {
     "client/modules/onPedChange.lua", -- Triggers an event when the player changes ped
     "client/modules/onVehicleChange.lua", -- Triggers an event when the player changes vehicle
     "client/modules/playerAttributes.lua", -- Changes attributes of the player
+    "client/modules/airTurbulence.lua", -- Disables turbulence when on planes or helicopters
 }
