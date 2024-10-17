@@ -9,6 +9,10 @@ Config = {
         disableIdleCamera = true, -- Stops the game from enabling the idle camera when standing still for 60 seconds
     },
 
+    vehicles = {
+        disableTurbolence = true -- Disables the turbolence when piloting helicopters or airplanes
+    },
+
     weaponDamage = { -- If active the script will override the current weapon damage with the ones in the values array
         active = false,
         values = {
