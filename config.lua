@@ -82,18 +82,18 @@ Config = {
             ["WEAPON_MINIGUN"] = 15.0,
             ["WEAPON_COMBATMG_MK2"] = 15.0,
 
-            --[[ TIER SPECIAL ]]
+            --[[ SPECIAL TIER ]]
             -- Pistols
-            ["WEAPON_MARKSMANPISTOL"] = 300.0,
-            ["WEAPON_GADGETPISTOL"] = 300.0,
+            ["WEAPON_MARKSMANPISTOL"] = 500.0,
+            ["WEAPON_GADGETPISTOL"] = 500.0,
             -- Snipers
-            ["WEAPON_HEAVYSNIPER"] = 300.0,
-            ["WEAPON_MARKSMANRIFLE"] = 300.0,
-            ["WEAPON_MUSKET"] = 300.0,
-            ["WEAPON_SNIPERRIFLE"] = 300.0,
-            ["WEAPON_PRECISIONRIFLE"] = 300.0,
-            ["WEAPON_HEAVYSNIPER_MK2"] = 300.0,
-            ["WEAPON_MARKSMANRIFLE_MK2"] = 300.0,
+            ["WEAPON_HEAVYSNIPER"] = 500.0,
+            ["WEAPON_MARKSMANRIFLE"] = 500.0,
+            ["WEAPON_MUSKET"] = 500.0,
+            ["WEAPON_SNIPERRIFLE"] = 500.0,
+            ["WEAPON_PRECISIONRIFLE"] = 500.0,
+            ["WEAPON_HEAVYSNIPER_MK2"] = 500.0,
+            ["WEAPON_MARKSMANRIFLE_MK2"] = 500.0,
         }
     }
 }
