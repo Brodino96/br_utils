@@ -14,7 +14,7 @@ Config = {
     },
 
     weaponDamage = { -- If active the script will override the current weapon damage with the ones in the values array
-        active = false,
+        active = true,
         values = {
             -- Pistols
             ["WEAPON_PISTOL"] = 10.0,

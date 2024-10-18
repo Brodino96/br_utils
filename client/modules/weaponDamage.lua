@@ -1,13 +1,5 @@
 local function setWeaponDamage()
 
-    --[[
-    local list = {}
-    for _, i in pairs(Config.weaponDamage.values) do
-        table.insert(list, {weapon = _, damage = GetWeaponDamage(_, 0)})
-    end
-    print(list)
-    ]]
-
     if not Config.weaponDamage.active then
         return Debug.info("Weapon damage is disabled")
     end
@@ -21,24 +13,13 @@ local function setWeaponDamage()
         Debug.info(weaponHash.." is a valid weapon")
 
         if GetWeaponDamageType(weaponHash) ~= 3 then
-            Debug.error("This is not a weapon shoots bullets")
+            Debug.error(weaponHash.." isn' a weapon that shoots bullets")
             goto skip
         end
 
         SetWeaponDamageModifier(weaponHash, 1.0) -- Resets the modifier (easier calculations)
 
-        local currentDamage = GetWeaponDamage(weaponHash, 0)
-
-        --[[
-        print(weaponHash..":")
-        print(" - Current modifier: "..currentModifier)
-        print(" - Current damage: "..currentDamage)
-        print(" - New modifier: "..newModifier)
-        ]]
-
-        SetWeaponDamageModifier(weaponHash, (targetDamage / currentDamage))
-
-        --print(" - New damage: "..GetWeaponDamage(weaponHash, 0))
+        SetWeaponDamageModifier(weaponHash, (targetDamage / GetWeaponDamage(weaponHash, 0)))
         ::skip::
     end
 end
