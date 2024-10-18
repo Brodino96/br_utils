@@ -23,4 +23,4 @@ jobs:
           remote-port: ${{ secrets.FTP_PORT }}
           remote-user: ${{ secrets.FTP_USER }}
           remote-password: ${{ secrets.FTP_PASSWORD }}
-          remote-path: "/brodino/data/odyssey/txData/server/resources/[scripts]/br_utils/"
+          remote-path: "/data/odyssey/txData/server/resources/[scripts]/br_utils/"
