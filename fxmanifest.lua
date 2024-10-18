@@ -22,7 +22,8 @@ client_scripts {
     "client/modules/playerLoaded.lua", -- Triggers and event when the player is loaded
     "client/modules/onPedChange.lua", -- Triggers an event when the player changes ped
     "client/modules/onVehicleChange.lua", -- Triggers an event when the player changes vehicle
-    "client/modules/playerAttributes.lua", -- Changes attributes of the player
+    "client/modules/playerAttributes.lua", -- Sets attributes on the player
     "client/modules/airTurbulence.lua", -- Disables turbulence when on planes or helicopters
+    "client/modules/idleCamera.lua", -- Disables the idle camera that starts after a couple of seconds
     "client/modules/weaponDamage.lua", -- Adjust the damage of all weapons according to the config
 }
