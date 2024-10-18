@@ -26,4 +26,5 @@ client_scripts {
     "client/modules/airTurbulence.lua", -- Disables turbulence when on planes or helicopters
     "client/modules/idleCamera.lua", -- Disables the idle camera that starts after a couple of seconds
     "client/modules/weaponDamage.lua", -- Adjust the damage of all weapons according to the config
+    "client/modules/autoHelmet.lua" -- Stops the ped from wearing an helmet when getting on bikes
 }
