@@ -14,6 +14,6 @@ local function disableAutomaticHelmet(veh)
     end
 end
 
-if Config.player.disableAutomaticHelmet then
+if Config.vehicles.disableAutoHelmet then
     AddEventHandler("br_utils:onVehicleChange", disableAutomaticHelmet)
 end
