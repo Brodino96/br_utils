@@ -24,7 +24,7 @@ local function setWeaponDamage()
     Debug.success("Weapon damages have been set")
 end
 
-if Config.weaponDamage.active then
+if Config.weaponDamage.enable then
     AddEventHandler("br_utils:playerLoaded", setWeaponDamage)
     setWeaponDamage()
 end

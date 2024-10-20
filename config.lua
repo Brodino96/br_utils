@@ -7,14 +7,14 @@ Config = {
         disableHatDrop = true, -- Stops the playerPed from losing his hat when he gets damaged by melee
         disableIdleCamera = true, -- Stops the game from enabling the idle camera when standing still for 60 seconds
     },
-    
+
     vehicles = {
         disableTurbolence = true, -- Disables the turbolence when piloting helicopters or airplanes
         disableAutoHelmet = true, -- Stops the playerPed from automatically wearing an helmet while on bikes or bicycles
     },
 
     weaponDamage = { -- If active the script will override the current weapon damage with the ones in the values array
-        active = true,
+        enable = true,
         values = {
             --[[ TIER 1 ]]
             -- Pistols
