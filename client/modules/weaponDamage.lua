@@ -1,8 +1,6 @@
 local function setWeaponDamage()
 
-    if not Config.weaponDamage.active then
-        return Debug.info("Weapon damage is disabled")
-    end
+    Debug.info("Starting to change weapon damages")
 
     for weaponHash, targetDamage in pairs(Config.weaponDamage.values) do
 
@@ -22,9 +20,11 @@ local function setWeaponDamage()
         SetWeaponDamageModifier(weaponHash, (targetDamage / GetWeaponDamage(weaponHash, 0)))
         ::skip::
     end
+
+    Debug.success("Weapon damages have been set")
 end
 
-RegisterNetEvent("br_utils:playerLoaded")
-AddEventHandler("br_utils:playerLoaded", setWeaponDamage)
-
-setWeaponDamage()
+if Config.weaponDamage.active then
+    AddEventHandler("br_utils:playerLoaded", setWeaponDamage)
+    setWeaponDamage()
+end

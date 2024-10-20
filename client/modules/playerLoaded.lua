@@ -1,5 +1,6 @@
 local function playerLoaded()
     TriggerEvent("br_utils:playerLoaded")
+    Debug.info("Player has loaded")
 end
 
 if Framework == "esx" then

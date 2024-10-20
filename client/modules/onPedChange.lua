@@ -8,6 +8,7 @@ CreateThread(function ()
             goto skip
         end
         TriggerEvent("br_utils:onPedChange")
+        Debug.info("The playerPed has changed")
         PlayerPed = currentPed
         ::skip::
     end

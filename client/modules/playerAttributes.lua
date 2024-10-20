@@ -1,6 +1,7 @@
 local function setAttributes()
     SetPedSuffersCriticalHits(PlayerPed, (not Config.player.disableHeadshot))
     SetPedCanLosePropsOnDamage(PlayerPed, (not Config.player.disableHatDrop), 0)
+    Debug.info("Setting player attributes")
 end
 
 RegisterNetEvent("br_utils:onPedChange")

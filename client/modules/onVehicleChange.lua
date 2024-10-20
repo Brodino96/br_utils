@@ -8,6 +8,7 @@ CreateThread(function ()
             goto skip
         end
         TriggerEvent("br_utils:onVehicleChange", currentVeh)
+        Debug.info("Vehicle has changed")
         LastVehicle = currentVeh
         ::skip::
     end

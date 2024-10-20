@@ -9,6 +9,7 @@ local function disableAutomaticHelmet(veh)
                 Wait(0)
             end
         end)
+        Debug.info("Disabling ped from wearing helmet")
     else
         thread = false
     end
