@@ -8,13 +8,14 @@ description "A utility package for FiveM"
 version "1.1.0"
 
 shared_scripts {
-    "config.lua",
+    "config.lua", -- Holds all the configs
     "shared/debug.lua", -- Debug print function
     "shared/framework.lua", -- Checks the framework on startup
 }
 
 server_scripts {
     "server/versionCheck.lua", -- Checks the current version of the script to see if it's the latest
+    "server/main.lua", -- Main server script
 }
 
 client_scripts {
