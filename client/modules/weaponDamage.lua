@@ -15,7 +15,14 @@ local function setWeaponDamage() ---@type function
             goto skip
         end
 
-        targetDamage = targetDamage + 1
+        if targetDamage < 0 then
+            Debug.error(weaponHash.." target weapon is a negative number")
+            goto skip
+        end
+
+        if targetDamage > 0 then
+            targetDamage = targetDamage + 1
+        end
 
         SetWeaponDamageModifier(weaponHash, 1.0) -- Resets the modifier (easier calculations)
 
