@@ -19,7 +19,7 @@ Config = { ---@type table
     },
 
     vehicles = { ---@type table
-        disableTurbolence = true, ---@type boolean
+        disableTurbulence = true, ---@type boolean
         disableAutoHelmet = true, ---@type boolean
     },
 

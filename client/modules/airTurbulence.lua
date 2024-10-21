@@ -15,6 +15,6 @@ local function disableTurbulence() ---@type function
     end
 end
 
-if Config.vehicles.disableTurbolence then
+if Config.vehicles.disableTurbulence then
     AddEventHandler("br_utils:onVehicleChange", disableTurbulence)
 end
