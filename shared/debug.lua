@@ -1,4 +1,4 @@
-Debug = {
+Debug = { ---@type table
     success = function (str, bypass)
         if Config.debugMode or bypass then
             print("[^2SUCCESS^0] "..str)

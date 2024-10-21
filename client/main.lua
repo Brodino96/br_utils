@@ -1,1 +1,1 @@
-BR = {}
+BR = {} ---@type table

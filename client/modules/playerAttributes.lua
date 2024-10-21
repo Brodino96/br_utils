@@ -1,18 +1,7 @@
-local function setAttributes()
-    local playerPed = PlayerPedId()
-    SetPedSuffersCriticalHits(playerPed, (not Config.player.disableHeadshot))
-    SetPedCanLosePropsOnDamage(playerPed, (not Config.player.disableHatDrop), 0)
-    SetPedConfigFlag(playerPed, 35, (not Config.player.disableAutomaticHelmet))
-
-    if Config.player.disableIdleCamera then
-        CreateThread(function ()
-            while true do
-                InvalidateIdleCam()
-                InvalidateVehicleIdleCam()
-                Wait(25000)
-            end
-        end)
-    end
+local function setAttributes() ---@type function
+    SetPedSuffersCriticalHits(PlayerPed, (not Config.player.disableHeadshot))
+    SetPedCanLosePropsOnDamage(PlayerPed, (not Config.player.disableHatDrop), 0)
+    Debug.info("Setting player attributes")
 end
 
 RegisterNetEvent("br_utils:onPedChange")
