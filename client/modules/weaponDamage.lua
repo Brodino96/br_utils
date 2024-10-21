@@ -15,6 +15,8 @@ local function setWeaponDamage() ---@type function
             goto skip
         end
 
+        targetDamage = targetDamage + 1
+
         SetWeaponDamageModifier(weaponHash, 1.0) -- Resets the modifier (easier calculations)
 
         SetWeaponDamageModifier(weaponHash, (targetDamage / GetWeaponDamage(weaponHash, 0)))
