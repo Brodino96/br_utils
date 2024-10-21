@@ -2,6 +2,16 @@ Config = {
 
     debugMode = false,
 
+    isStaff = {
+        enable = true,
+        type = "esxJob",
+        values = {
+            ["playerAce"] = "admin",
+            ["esxJob"] = "admin",
+            ["esxGroup"] = "admin",
+        }
+    },
+
     player = {
         disableHeadshot = true, -- Stops the playerPed from reciving critical damage on an headshot (it will apply the same damage as a bodyshot)
         disableHatDrop = true, -- Stops the playerPed from losing his hat when he gets damaged by melee
