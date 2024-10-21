@@ -16,7 +16,7 @@ local function versionCheck(repo)
 			if status ~= 200 then return end
 
 			response = json.decode(response)
-            
+
 			if response.prerelease then return end
 
             if string.gsub(response.name, "v", "") == currentVersion then
