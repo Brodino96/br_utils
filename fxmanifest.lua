@@ -16,6 +16,7 @@ shared_scripts {
 server_scripts {
     "server/versionCheck.lua", -- Checks the current version of the script to see if it's the latest
     "server/main.lua", -- Main server script
+    "server/modules/isStaff.lua", -- Checks if a certain id is staff
 }
 
 client_scripts {
