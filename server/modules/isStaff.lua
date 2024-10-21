@@ -1,4 +1,4 @@
-local arr = Config.adminCheck
+local arr = Config.isStaff
 local value = arr.values[arr.type]
 
 function IsStaff(id)
