@@ -1,6 +1,6 @@
-local thread = false
+local thread = false ---@type boolean
 
-local function disableAutomaticHelmet(veh)
+local function disableAutomaticHelmet(veh) ---@type function
     if veh ~= 0 and GetVehicleType(veh) == "bike" and not thread then
         thread = true
         CreateThread(function ()

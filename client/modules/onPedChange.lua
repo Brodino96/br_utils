@@ -1,4 +1,4 @@
-PlayerPed = PlayerPedId()
+PlayerPed = PlayerPedId() ---@type integer
 
 CreateThread(function ()
     while true do

@@ -1,9 +1,9 @@
-LastVehicle = GetVehiclePedIsIn(PlayerPed, false)
+LastVehicle = GetVehiclePedIsIn(PlayerPed, false) ---@type integer
 
 CreateThread(function ()
     while true do
         Wait(0)
-        local currentVeh = GetVehiclePedIsIn(PlayerPed, false)
+        local currentVeh = GetVehiclePedIsIn(PlayerPed, false) ---@type integer
         if currentVeh == LastVehicle then
             goto skip
         end

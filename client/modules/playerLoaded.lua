@@ -1,4 +1,4 @@
-local function playerLoaded()
+local function playerLoaded() ---@type function
     TriggerEvent("br_utils:playerLoaded")
     Debug.info("Player has loaded")
 end

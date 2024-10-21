@@ -1,4 +1,4 @@
-local function setWeaponDamage()
+local function setWeaponDamage() ---@type function
 
     Debug.info("Starting to change weapon damages")
 

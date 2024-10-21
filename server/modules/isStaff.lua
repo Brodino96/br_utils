@@ -1,7 +1,7 @@
-local arr = Config.isStaff
-local value = arr.values[arr.type]
+local arr = Config.isStaff ---@type table
+local value = arr.values[arr.type] ---@type any
 
-function IsStaff(id)
+function IsStaff(id) ---@type function
     if arr.type == "playerAce" then
         return IsPlayerAceAllowed(id, value)
     end
