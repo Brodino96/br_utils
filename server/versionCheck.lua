@@ -1,5 +1,5 @@
 local function versionCheck(repo)
-    local resourceName = GetInvokingResource() or GetCurrentResourceName()
+    local resourceName = GetCurrentResourceName()
 
     if resourceName ~= "br_utils" then
         return Debug.error("The resource name has ben changed, unable to perform a version check", true)
