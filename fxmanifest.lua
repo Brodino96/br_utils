@@ -5,7 +5,7 @@ lua54 "yes"
 
 author "Brodino"
 description "A utility package for FiveM"
-version "1.1.0"
+version "1.1.1"
 
 shared_scripts {
     "config.lua", -- Holds all the configs
@@ -28,5 +28,6 @@ client_scripts {
     "client/modules/airTurbulence.lua", -- Disables turbulence when on planes or helicopters
     "client/modules/idleCamera.lua", -- Disables the idle camera that starts after a couple of seconds
     "client/modules/weaponDamage.lua", -- Adjust the damage of all weapons according to the config
-    "client/modules/autoHelmet.lua" -- Stops the ped from wearing an helmet when getting on bikes
+    "client/modules/autoHelmet.lua", -- Stops the ped from wearing an helmet when getting on bikes
+    "client/modules/onPlayerDeath.lua", -- Triggers an event everytime the player dies
 }
