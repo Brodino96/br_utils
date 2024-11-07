@@ -5,7 +5,7 @@ lua54 "yes"
 
 author "Brodino"
 description "A utility package for FiveM"
-version "1.1.1"
+version "1.1.2"
 
 shared_scripts {
     "config.lua", -- Holds all the configs
