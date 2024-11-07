@@ -17,7 +17,7 @@ local function checkForDeath()
 
             if health <= 0 and not isDead then
                 isDead = true
-                TriggerEvent("br_utils:onPedDeath")
+                TriggerEvent("br_utils:onPlayerDeath")
             end
 
             if health > 0 and isDead then
