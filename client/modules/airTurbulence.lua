@@ -5,7 +5,6 @@ local function disableTurbulence() ---@type function
 
     if vehType == "heli" then
         SetHeliTurbulenceScalar(veh, 0.0)
-        SetHelicopterRollPitchYawMult(veh, 0.0)
         Debug.info("Helicopter turbolence set to 0")
     end
 
